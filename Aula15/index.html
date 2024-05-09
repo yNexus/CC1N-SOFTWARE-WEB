@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula15</title>
+
+    <style>
+
+        .divsimples{
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .divtratada{
+            display: inline-block;
+            background-color: lightblue;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            margin-top: 5px;
+        }
+
+        .spanlorem{
+            color: red;
+        }
+
+        .divtratada > p:hover{
+    text-decoration: underline;
+    background-color: yellow;
+    font-weight: bold;
+}
+    </style>
+
+</head>
+<body>
+    
+    <div class="divsimples">01</div>
+
+    <div class="divtratada">
+        <div class="divsimples"><p>02</p></div>
+    </div>
+
+    <div class="divtratada"><p id="paragrafo">03</p></div>
+
+    <div class="divsimples">04</div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+    <span class="spanlorem"> ex accusantium, cumque, id facere eum eius deleniti</span> sunt 
+    <div style="color: red; background-color: blue; display: inline-block;">pariatur neque sunt similique veniam delectus 
+        eligendi voluptas consequuntur quae facilis, sint nam.</div> snt nam</p>
+
+    
+</body>
+</html>
