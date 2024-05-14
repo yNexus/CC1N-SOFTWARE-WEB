@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Muciaccia - Aula16</title>
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png">
+   
+    <style>
+        .container1{
+            background-color: gray;
+            height: 200px;
+            display: flex;
+            flex-direction: row;            /* row-reverse, column, column-reverse */
+            flex-wrap: wrap;                /* nowrap,warp-reverse */
+            justify-content: space-around;  /* end,start,space-between,center,space-evenly */
+            align-items: baseline;
+            
+            
+        }
+
+        .item{
+            background-color: darkgreen;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .artigo-02{
+            align-self: flex-end;
+        }
+
+        .container2{
+            background-color: rgb(80, 77, 77);
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            
+
+        }
+
+        .div1{
+            background-color: white;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Exercício 1</h1>
+
+    <section class="container1">
+        <article class="item artigo-01">Artigo 1</article>
+
+        <article class="item artigo-02">Artigo 2</article>
+
+        <article class="item artigo-03">Artigo 3</article>
+    </section>
+
+    <section class="container2">
+        <div class="item div1">
+
+        </div>
+    </section>
+
+</body>
+</html>
