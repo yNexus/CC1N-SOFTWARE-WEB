@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula17 - Formulário</title>
+
+    <style>
+        .container{
+            margin: 20px;
+            background-color: rgb(0, 110, 255);
+            border: 5px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 2%;
+            padding-left: 1px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 550px;
+            height: 55  0px;
+        }
+
+        .divs{
+            display: flex;
+            justify-content: center;
+        }
+
+        .field span{
+            
+        }
+    </style>
+
+</head>
+<body style="background-color: blanchedalmond;">
+    <section class="container">
+        <div class="field">
+            <form action="mailto:fabricio.ferreira@uvv.br" method="post" class="formulario">
+            <span>Nome:</span>
+            <input type="text" id="nome" placeholder="insira o seu nome" required> <br>
+
+            <span>E-mail:</span>
+            <input type="email" id="email" placeholder="insira o seu email" required> <br>
+
+            <span>Data de Nascimento:</span>
+            <input type="date" id="datanascimento"> <br>
+
+            <span>Visita ao Site</span>
+            <input type="datetime-local" id="visita"> <br>
+
+            <span>Senha:</span>
+            <input type="password" id="senha" placeholder="digite sua senha"> <br>
+
+            <span>Confirme sua senha:</span>
+            <input type="password" id="senha" placeholder="confirme sua senha"> <br>
+
+            <span>Contato:</span>
+            <input type="radio" name="contato" id="sim" value="sim"> Sim
+            <input type="radio" name="contato" id="não" value="não"> Não
+            <br>
+            
+            <span>Assunto:</span>
+            <input type="checkbox" name="auto" id="auto"> Automóvel
+            <input type="checkbox" name="negocio" id="auto"> Negócios
+            <input type="checkbox" name="auto" id="financa"> Finanças
+            <input type="checkbox" name="auto" id="tecnologia"> Tecnologia
+            <input type="checkbox" name="auto" id="esporte"> Esporte
+            <br>
+
+            <span>Local:</span>
+            <select name="local" id="local" size="1">
+                <option value="">Selecione</option>
+                <optgroup>Grande Vitória</optgroup>
+                <option value="Vitória">Vitória</option>
+                <option value="Serra">Serra</option>
+                <option value="Cariacica">Cariacica</option>
+                <option value="VilaVelha">VilaVelha</option>
+                <option value="Guarapari">Guarapari</option>
+            </select> <br>
+
+            <span>Comentário:</span>
+            <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea> <br>
+
+            <input type="submit" value="Enviar">
+
+            <input type="reset" value="Limpar">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
