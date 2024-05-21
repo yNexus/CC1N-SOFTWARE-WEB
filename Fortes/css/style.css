@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+    .cabeça1{
+        background-color: #0059A9;
+        height: 30px;
+        border-style: solid;
+        border-bottom: 1px;
+        border-width: 1px;
+        border-color: #0059A9;
+    }
+
+    .cabeça2{
+        background-color: #D8D8D8;
+        height: 60px;
+        border-style: solid;
+        border-top: 1px;
+        border-width: 1px;
+        border-color: #0059A9;
+    }
+
+        .etapas{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 66%;
+            margin: 50px auto;
+            padding: 20px 0;
+            position: relative;
+        }
+
+                .etapa {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black;
+                    background-color: #D8D8D8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    color: white;
+                    font-size: x-large;
+                }
+
+                .completa {
+                    background-color: #4caf50;
+                }
+
+                .andamento {
+                    background-color: #FFA336;
+                }
+
+                .etapas::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    height: 7px;
+                    background-color: #e0e0e0;
+                    z-index: -1;
+                }
+
+                .completa::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 40%;
+                    height: 7px;
+                    background-color: #4caf50;
+                    z-index: -1;
+                }
+    
+    .sec_container{
+        border-style: solid;
+        border-color: #0059A9;
+        border-radius: 1%;
+        margin: 1% auto;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formulario{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+        font-size: large;
+    }
+
+        .form{
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items:center;
+            margin: 20px auto;
+        }
+
+            .caixas{
+                width: 200px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .caixas>label{
+                background-color: #D8D8D8;
+                border-radius: 20%;
+                font-size: large;
+            }
+
+            .caixas>input{
+                width: 175px;
+                height: 35px;
+                font-size: small;
+            }
+
+            .caixas>select{
+                width: 180px;
+                height: 41px;
+                font-size: small;
+            }
+
+            .botão{
+                width: 120px;
+                height: 50px;  
+                font-size: large;   
+                justify-content: center;   
+            }
+
+            .submit{
+                background-color: #45AA55;
+            }
+
+            .reset{
+                background-color: #AA4545;
+            }
+
+    .footer{
+        background-color: #F0F0F1;
+    }
